@@ -32,7 +32,6 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     const previoudBalanceTotalString = balanceTotalElement.innerText;
     const previoudBalanceTotal = parseFloat(previoudBalanceTotalString);
 
-    
 
     //step-07: cleare the input field
     withdrawField.value = '';
@@ -41,6 +40,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
         alert('Not Efficient balance available in your account');
         return;
     }
+    /* if(previoudBalanceTotal  <150){
+        alert('Minimum blanace needed')
+        return;
+    } */
     
     //Step-04: Calculate total withdraw amount
 
@@ -54,6 +57,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
 
     const newBalanceTotal = previoudBalanceTotal - newWithdrawAmount;
     balanceTotalElement.innerText = newBalanceTotal;
+
 
     //step-08: clear the input field 
     withdrawField.value = '';
