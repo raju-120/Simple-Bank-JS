@@ -8,9 +8,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the <span> Eastern Bank</span></h1>
+    <header class="px-12 py-16">
+        <h1 class="text-5xl text-center mt-20 font-medium">Welcome to the <span class="text-emerald-500 font-bold"> Eastern Bank</span></h1>
     </header>
-    <main></main>
+    <main>
+        <section class="bg-blue-100 w-9/12  mx-auto mt-12 p-8">
+            <h3 class="text-3xl mb-10 text-indigo-700 font-medium">Please Login</h3>
+
+           <div>
+                <input class="w-9/12 block px-3 py-3 mb-5 rounded-lg " type="email" name="" id="">
+                <input class="w-9/12 block px-3 py-3 mb-5 rounded-lg" type="password" name="" id="">
+
+                <button class="bg-amber-600 hover:bg-sky-700 px-8 py-4 text-white text-medium text-xl rounded-lg">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="JS/login.js"></script>
 </body>
 </html>
